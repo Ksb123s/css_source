@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* btn- 로 시작하는 요소에 글자 굵게, 안쪽여백 10 px, 둥근 태두리 */
+      /* success 로 끝는 요소에 글자 색 그린,  */
+      /* danger 로 끝는 요소에 글자 색 red,  */
+      [class|="btn"] {
+        font-weight: bold;
+        padding: 10px;
+        border-radius: 20px;
+      }
+      [class$="success"] {
+        color: green;
+      }
+      [class$="danger"] {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="btn-success">Success</button>
+    <button class="btn-danger">Danger</button>
+    <button>Nomal</button>
+  </body>
+</html>
