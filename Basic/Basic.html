@@ -4,6 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Basic_css</title>
+
+    <style>
+      .ecosystem {
+        color: red;
+      }
+      .animal {
+        color: blue;
+      }
+      /* 동일한 영역에 대해 선택지가 달라진다면 기본 우선순위(작성순서)와 다르게 돌아감 */
+      #text {
+        color: green !important;
+      }
+      .area p {
+        color: wheat;
+      }
+      p {
+        color: red;
+      }
+    </style>
   </head>
   <body>
     <!-- 
@@ -23,6 +42,35 @@
             color:blue; 
             font-size:12px;
         }
+
+        css 
+         - 상속(주로 글자를 다루는 속성들이 상속 됨)
+         - 동일한 요소에 대해 여러 번 디자인 지정 가능 (아래쪽에 선언된 디자인 우선)
+         - 선택자 우선순위
+            !important > inline(태그에 집적 선언) > id > class > tag >all(*) >  ~ or > or +
+              - 가상 클래스- :hover, :link => 클래스 선택자
+              - 가상 요소 = ::before, ::after => 태그 선택자
+              -  부정 = not() => 우선순위 X
+            선택지가 동일하다면 작성 순서
+
+        .list li.item
      -->
+
+    <div class="ecosystem">
+      <div class="animal">
+        동물
+        <div class="tiger">호랑이</div>
+        <div class="lion">사자</div>
+        <div class="elephant">코끼리</div>
+      </div>
+      <div class="plant">식물</div>
+    </div>
+    <div class="area">
+      <p id="text" style="color: hotpink">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam cupiditate porro corporis. Deserunt dolore, esse illo dignissimos unde, minima
+        fugit ullam praesentium tenetur est vitae assumenda! Ad maxime expedita nemo, blanditiis maiores dicta ut voluptas voluptatibus magni
+        architecto quis enim laboriosam totam incidunt unde, vel beatae modi fuga soluta temporibus.
+      </p>
+    </div>
   </body>
 </html>

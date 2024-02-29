@@ -1,0 +1,35 @@
+/* 
+    text
+     - color(색상)
+     - aligment(정렬)
+     - spacing(간격)
+     - decoration()
+     - shadow(그림자)
+     - transform(대소문자 변경)
+
+
+*/
+p.letter {
+  color: blueviolet;
+  text-align: justify; /* left, center, right, justify*/
+  letter-spacing: 10px; /* 문자 사이 간격*/
+}
+p.word {
+  word-spacing: 10px; /* 단어 사이 간격*/
+}
+h1 {
+  text-decoration: underline overline; /*underline, overline, line-through  */
+  text-decoration-color: brown;
+}
+h2 {
+  text-shadow: 2px 2px 5px red;
+}
+p.uppercase {
+  text-transform: uppercase;
+}
+p.lowercase {
+  text-transform: lowercase;
+}
+p.capitalize {
+  text-transform: capitalize;
+}

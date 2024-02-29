@@ -1,0 +1,25 @@
+/* 
+    색상
+        - 색상명 : blue, red, 등
+        - 16진수 :#ffffff(#fff)
+        - rgb : rgb(0 ,255,128) ,rgba(0,255,128,0.5):  a=>alpha 투명도(0~1)
+        - hsl : hsl(120,50%, 50%)
+           h(hue) - 색상 0(red), 120(green), 240(blue)
+           s(saturation) - 0~100 (체도)
+           l(lightness) - 0~100 (명도)
+
+*/
+p {
+  background-color: #c30000;
+  color: #fff;
+}
+p {
+  /* background-color: rgb(123, 125, 255); */
+  background-color: rgba(123, 125, 255, 0.8);
+  color: #fff;
+}
+p {
+  /* background-color: rgb(123, 125, 255); */
+  background-color: hsl(25, 100%, 50%);
+  color: #fff;
+}

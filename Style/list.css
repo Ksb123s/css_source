@@ -1,0 +1,30 @@
+/* 
+    리스트
+     1) type - circle, square , disc(기본) ,lower-roman, lower-alpha
+     2) position - marker 의 위치
+     3) image - marker 대신 사용할 이미지 url("" )
+
+*/
+
+ul.a {
+  list-style-type: circle;
+}
+ul.b {
+  list-style-type: square;
+}
+ul.c {
+  list-style-type: disc;
+}
+
+ol.a {
+  list-style-type: lower-roman;
+  list-style-position: inside;
+}
+ol.b {
+  list-style-type: upper-alpha;
+  list-style-position: outside;
+}
+ol.c {
+  list-style-type: lower-alpha;
+  list-style-image: url("");
+}

@@ -1,0 +1,29 @@
+/* 
+css 단위
+ -모니터 :px ,em , %
+         px : 고정크기
+         % : 상대크기
+         em : em 단위가 쓰여진 곳의 폰트 사이즈 배수 body *em
+         rem : root의 값에 따라 계산방식이 다름 root * em
+         vw,vh (viewport width, viewport height) : 브라우저 흰색 영역 + margin
+*/
+:root {
+  font-size: 12px;
+}
+body {
+  font-size: 16px;
+}
+h1 {
+  font-size: 1.5em; /* 16px *1.5 = 24px*/
+}
+h2 {
+  font-size: 1.2rem;
+}
+p {
+  /* width: 800px; */
+  width: 100vw;
+  font-size: 1rem;
+}
+p span {
+  font-size: 0.8rem;
+}

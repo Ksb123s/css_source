@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pseudo</title>
+    <style>
+      a:link {
+        color: black;
+      }
+      a:visited {
+        color: green;
+      }
+      a:active {
+        color: blue;
+      }
+      a:hover {
+        color: blue;
+      }
+      h1:hover {
+        color: red;
+      }
+      [type="text"] {
+        width: 150px;
+        outline: none; /* input 요소가  focus를 받을 때 테두리가 bold 되는 현상 방지*/
+        border: 1px solid lightgray;
+        transition: 0.4s;
+        padding: 5px 10px;
+      }
+      [type="text"]:focus {
+        width: 200px;
+        background-color: yellow;
+      }
+      [type="text"]:disabled {
+        background-color: aqua;
+      }
+      input[type="radio"]:checked {
+        width: 50px;
+        height: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+        1. selector(선택자)
+         1) class : 전역 속성인 클래스를 이용하기
+         2) id : 전역 속성인 클래스를 이용하기 
+         3) tag : 태그 이용 (현재 페이지 내의 동일한 태그에 적용)
+         4) All : *
+         5) 자손(하위) : 자식 + 손자   부모선택자  자식선택자
+         6) 자식 : 부모 선택자 > 자식선택자
+         7) 형제 : +(형제 중 1개만) or ~(형제 모두 선택) ex) 선택자 + 선택자 / 선택자 ~ 선택자
+         8) group: 다양한 선택자 요소에 동일한 디자인을 적용(선택자, 선택자{~~})
+         9) 속성 : [속성명], [속성명 = "value"], [속성명 ~= "value"],[속성명 |= "value"],[속성명 ^= "value"], [속성명 $= "value"] ,[속성명 *= "value"]
+         10) pseudo class:
+            a태그
+                - link : 밑줄
+                - visited : 자주색
+                - active : 빨간색
+
+                - hover : 요소에 마우스를 올리는 행동
+                - focus : 요소중 포커스를 받으면 불러옴
+
+                - disabled
+                - checked(radio, checkbox)
+                - selected(select)
+     -->
+    <h1>가상 클래스</h1>
+    <ul>
+      <li>
+        <a href="http://www.naver.com">네이버</a>
+      </li>
+      <li>
+        <a href="http://www.daum.com">다음</a>
+      </li>
+      <li>
+        <a href="http://www.google.com">구글</a>
+      </li>
+    </ul>
+    <div>
+      <label for="">이름</label>
+      <input type="text" name="" id="" />
+    </div>
+    <div>
+      <label>
+        <input type="text" name="name" id="" value="Mickey" disabled />
+      </label>
+    </div>
+    <div>
+      <input type="radio" name="apple" id="" checked />사과 <input type="radio" name="apple" id="" />포도
+      <input type="radio" name="apple" id="" />수박
+    </div>
+  </body>
+</html>
