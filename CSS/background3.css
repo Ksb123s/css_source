@@ -1,0 +1,13 @@
+.lorem {
+  width: 800px;
+  height: 300px;
+  /* 태두리  2px solid #fff; */
+  border: 2px solid black;
+  /* 안쪽여백 : 네 방향 10 */
+  padding: 10px;
+  margin: auto;
+  /* 배경 이미지 w3 반복 x 위치 오른쪽 하단 */
+  background-image: url(../image/w3c.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}

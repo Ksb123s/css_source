@@ -1,0 +1,20 @@
+/* margin 중복 */
+/* .parent {
+  margin: 0;
+  padding: 0;
+}
+.child {
+  width: 100px;
+  height: 100px;
+  background-color: brown;
+  margin: 20px;
+  float: left;
+} */
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: brown;
+  padding: 20px;
+  box-sizing: border-box;
+}

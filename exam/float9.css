@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+/* 헤더 : 배경색 #333  안쪽여백 30 , 가운대 정렬, 글꼴크기 35 글자색 흰*/
+header {
+  background-color: #333;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+/* nav요소: 높이 500 배경색 #ccc, 안쪽여백 20 */
+nav {
+  height: 500px;
+  background-color: #ccc;
+  padding: 20px;
+  width: 30%;
+  float: left;
+}
+nav ul li {
+  list-style-type: none;
+  text-decoration: none;
+}
+/* article요소: 높이 500 배경색 #f1f1f1, 안쪽여백 20 */
+article {
+  height: 500px;
+  width: 70%;
+  background-color: #f1f1f1;
+  padding: 20px;
+  float: left;
+}
+/* footer : 배경색#777  안쪽여백 10 글자 가운데 정렬 흰색*/
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}

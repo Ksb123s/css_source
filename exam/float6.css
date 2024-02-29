@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.continer::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.container {
+  width: auto;
+  margin: auto;
+}
+.box {
+  width: 33.33%;
+  height: 500px;
+  margin: 0;
+  border: 2px solid black;
+
+  background-color: #ddd;
+  float: left;
+}

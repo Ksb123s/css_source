@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box2</title>
+    <link rel="stylesheet" href="../CSS/box2.css" />
+  </head>
+  <body>
+    <!--  box model
+           - 요소의 크기= 요소의 width+ padding + border width
+           - width:100, padding 20, border 5px
+             - 100+40+10 =150
+             box-sizing: border-box; width100 이 padding, border를 포함한 크기로 만들어줌
+    -->
+    <!-- 
+        자식요소의 너비는 부모 요소의 가로 너비에 영향을 받음
+        자식 요소의 내용이 많아지면 부모 크기를 넘어가게 됨 => 부모 크기안에 제한을 두기위해
+        MAX-width, min-width 사용
+        
+
+        마진 중복(병합)
+         1. 자식 요소의 margin-bottom과 margin-top 이 겹치는경우
+
+         마진은 수평으로 쌇일때는 병합 현상이 안 일어남
+     -->
+    <div class="parent">
+      <div class="child"></div>
+      <div class="child"></div>
+    </div>
+    <div class="box"></div>
+  </body>
+</html>

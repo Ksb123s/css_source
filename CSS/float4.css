@@ -1,0 +1,18 @@
+img {
+  vertical-align: top; /* 이미지 하단 공백 제거*/
+}
+
+.clearfix {
+  background-color: skyblue;
+}
+
+.clearfix div {
+  float: left;
+  margin-right: 10px;
+  border: 1px solid;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}

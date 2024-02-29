@@ -1,0 +1,28 @@
+/* 
+
+
+
+*/
+
+td,
+th {
+  border-bottom: 1px solid #ddd; /* 선두께 선모양 선색상*/
+}
+
+table {
+  border-collapse: collapse; /* 이웃하는 셀 경계선 합치기*/
+  width: 100%;
+}
+/* tr:hover {
+  background-color: aqua;
+} */
+th {
+  background-color: #04aa6d;
+  color: #fff;
+}
+tr:nth-child(2n) {
+  background-color: aqua;
+}
+caption {
+  caption-side: bottom;
+}

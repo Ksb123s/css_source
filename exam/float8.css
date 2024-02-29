@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 960px;
+  margin: 0 auto;
+  background-color: #ccc;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.container h1 {
+  float: left;
+  text-align: left;
+}
+nav {
+  float: right;
+}
+nav ul li {
+  display: inline-block;
+  list-style-type: none;
+  line-height: 60px;
+  margin-left: 20px;
+}
+a {
+  color: black;
+  text-decoration: none;
+}

@@ -1,0 +1,27 @@
+/* 
+
+
+
+*/
+
+table,
+td,
+th {
+  border: 1px solid; /* 선두께 선모양 선색상*/
+}
+
+table {
+  border-collapse: collapse; /* 이웃하는 셀 경계선 합치기*/
+  width: 100%;
+}
+/* td {
+  height: 50px;
+  text-align: center;
+  vertical-align: bottom;
+}
+th {
+  height: 70px;
+} */
+td {
+  padding: 15px; /*안쪽 여벡*/
+}

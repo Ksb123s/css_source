@@ -1,0 +1,12 @@
+div {
+  width: 100px;
+  height: 50px;
+  background-color: blueviolet;
+  padding: 20px;
+  margin: 20px;
+}
+span {
+  background-color: brown;
+  padding: 30px;
+  margin: 20px;
+}
