@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex2</title>
+    <style>
+      .container {
+        flex-wrap: wrap;
+        height: 400px;
+        display: flex;
+        /* flex-direction: column-reverse; */
+        /* flex-wrap: wrap-reverse; */
+        border: 2px solid;
+        /* justify-content: space-evenly; */
+        /* align-content: space-evenly; */
+        align-items: baseline;
+      }
+      .container div {
+        width: 200px;
+        height: 100px;
+      }
+      .container .item:first-child {
+        background-color: red;
+      }
+      .container .item:nth-child(2) {
+        background-color: orange;
+      }
+      .container .item:nth-child(3) {
+        background-color: yellow;
+        font-size: 50px;
+      }
+      .container .item:nth-child(4) {
+        background-color: green;
+        height: 80px;
+      }
+      .container .item:nth-child(5) {
+        background-color: blue;
+        height: 60px;
+      }
+      .container .item:nth-child(6) {
+        background-color: brown;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+            레이아웃 :위-아래 수직 구성(스크롤 사용)
+            1. 수평(왼=> 오)
+             1).float
+             2).inline-block
+             3).flex
+                - flex-direction(방향) : row(기본), column(위-> 아래) row-reverse(float: left), column-reverse
+                - flex-wrap(여러줄 허용 여부): wrap(여러 줄로 이동시 맨 마지막 요소부터) ,nowrap(기본: 한줄로), wrap-reverse(여러 줄로 이동시 맨 첫번째 요소부터)
+                - justify-content(주 축 정렬): flex-start(기본-왼쪽), flex-end(오른쪽), center(가운데 정렬), space-between(첫요소 왼쪽, 마지막요소 오른쪽 그외 중간), space-around(각요소 사이사이 공백주기), space-evenly(모든요소 사이공백 단 동일한 공백)
+                    주축: 요소가 배치되는 방향(flex-direction:row 라면 가로축, flex-direction:column 라면 세로축)
+                    보조축: 주축과 교차 되는 축
+                - align-content(교차 축 정렬) : 교차축 공간이 있고, 주축에서 여러 줄 허용
+                    stretch: 부모의 height에 맞춰 자식 높이가 늘어남(기본 - 공백 x)
+                    flex-start(기본-왼쪽), flex-end(오른쪽), center, space-between, space-around, space-evenly
+                - align-item: 한 줄 일 때 정렬(align-content 와 같이 사용되는경우 content우선)
+                   stretch : 컨테이너 교차축을 체우기위해 item 늘림
+                   flex-start(기본-왼쪽), flex-end(오른쪽), center, baseline(item을 문자 기준선에 정렬)
+         -->
+
+    <div class="container">
+      <div class="item">A</div>
+      <div class="item">B</div>
+      <div class="item">C</div>
+      <div class="item">D</div>
+      <div class="item">E</div>
+      <div class="item">F</div>
+    </div>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi earum dolor quisquam unde quae quo veritatis nesciunt facere iste velit ad quod
+      cumque modi provident laudantium, assumenda reprehenderit neque accusamus!
+    </p>
+  </body>
+</html>

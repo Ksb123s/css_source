@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media4</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .wrapper {
+        background-color: #333;
+      }
+      .wrapper h1 {
+        background-color: #fff;
+      }
+      .wrapper a {
+        padding: 14px 16px;
+        color: #f2f2f2;
+        text-decoration: none;
+        display: inline-block;
+        text-align: center;
+        /* float: left; */
+      }
+      .wrapper a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      /* .clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
+      } */
+      @media screen and (max-width: 600px) {
+        .wrapper a {
+          text-decoration: none;
+          display: block;
+          /* float: none; */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper clearfix">
+      <h1>Responsive negative menu</h1>
+      <a href="#">Link</a>
+      <a href="#">Link</a>
+      <a href="#">Link</a>
+    </div>
+  </body>
+</html>
