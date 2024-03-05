@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex9</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        background: #333338;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        color: #444;
+      }
+      .container {
+        display: flex;
+      }
+      .container .main-content {
+        background-color: #eee;
+        padding: 6px;
+        margin: 10px;
+      }
+      .container .sidebar {
+        background-color: #eee;
+        padding: 6px;
+        margin: 10px;
+      }
+      .panel {
+        background-color: white;
+        padding: 20px;
+        margin: 10px;
+      }
+      .sidebar {
+        display: flex;
+
+        flex-direction: column;
+        justify-content: space-between;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <section class="main-content">
+        <div class="panel">
+          <h1>Main Title</h1>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est dolor perferendis repellat quis amet facere nisi! Fugit recusandae,
+            perspiciatis totam aperiam expedita, tenetur, sequi impedit porro at odio est sunt?
+          </p>
+          <img src="https://placehold.co/100x120" alt="" />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum sed eos suscipit. Cum alias aperiam veniam pariatur ea voluptatem?
+            Voluptas eius odit, maxime ratione architecto eum consequatur omnis in iure tenetur veritatis sed? Nihil laudantium omnis et asperiores,
+            vel impedit delectus, est dolorem recusandae unde fugit quibusdam dolorum quia reiciendis.
+          </p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis ratione reprehenderit neque accusantium dicta! Suscipit, deserunt velit
+            sint aliquid adipisci eaque numquam quae cum quisquam, excepturi, doloremque ab modi consequuntur!
+          </p>
+          <h3>Subtitle</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident saepe veniam explicabo fugiat commodi reiciendis quia ab fuga iure id,
+            voluptatum soluta rerum aperiam voluptatibus mollitia ducimus dolorum! Sapiente, in?
+          </p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis ratione reprehenderit neque accusantium dicta! Suscipit, deserunt velit
+            sint aliquid adipisci eaque numquam quae cum quisquam, excepturi, doloremque ab modi consequuntur!
+          </p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis ratione reprehenderit neque accusantium dicta! Suscipit, deserunt velit
+            sint aliquid adipisci eaque numquam quae cum quisquam, excepturi, doloremque ab modi consequuntur!
+          </p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis ratione reprehenderit neque accusantium dicta! Suscipit, deserunt velit
+            sint aliquid adipisci eaque numquam quae cum quisquam, excepturi, doloremque ab modi consequuntur!
+          </p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis ratione reprehenderit neque accusantium dicta! Suscipit, deserunt velit
+            sint aliquid adipisci eaque numquam quae cum quisquam, excepturi, doloremque ab modi consequuntur!
+          </p>
+        </div>
+      </section>
+      <aside class="sidebar">
+        <div class="panel">
+          <h3>Item 1</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore, tempore nobis. A dolores nisi adipisci numquam. Harum natus</p>
+        </div>
+        <div class="panel">
+          <h3>Item 2</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        </div>
+        <div class="panel">
+          <h3>Item 3</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore, tempore nobis. A dolores nisi</p>
+        </div>
+        <div class="panel">
+          <h3>Item 4</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore, tempore nobis.</p>
+        </div>
+      </aside>
+    </div>
+  </body>
+</html>

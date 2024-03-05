@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexible</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      /* body 배경색 #ecf0f1 */
+      body {
+        background-color: #ecf0f1;
+      }
+
+      /* wrapper maxwidth 60rem width 100% margin 2rem auto */
+      .wrapper {
+        max-width: 60rem;
+        width: 100%;
+        margin: 2rem auto;
+        position: relative;
+      }
+      /* flexbg flex container */
+      .flexbg {
+        display: flex;
+      }
+      .flexbg main {
+        background-color: white;
+        width: 60%;
+        padding: 1.618rem;
+        order: 2;
+      }
+      .flexbg .sidebar {
+        width: 20%;
+        padding: 1.618rem;
+        color: white;
+      }
+      .flexbg .left {
+        background-color: #3498db;
+        order: 1;
+      }
+      .flexbg .right {
+        background-color: #34495e;
+        order: 3;
+      }
+      @media screen and (max-width: 768px) {
+        .flexbg {
+          flex-wrap: wrap;
+        }
+        .flexbg main {
+          width: 100%;
+          order: 1;
+        }
+        .flexbg .sidebar {
+          width: 50%;
+        }
+        .flexbg .left {
+          order: 2;
+        }
+      }
+      @media screen and (max-width: 480px) {
+        .flexbg .sidebar {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper flexbg">
+      <main>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati dicta neque quam ad et fugiat fuga, qui ex eveniet alias eaque eos non
+          quod rerum maxime corrupti eligendi consequuntur perferendis optio recusandae placeat rem explicabo est ratione? Quas molestiae voluptas
+          iste, quia earum non magnam? Qui, expedita veritatis ipsam ut voluptatem animi odit, placeat praesentium nam soluta iure, aperiam
+          exercitationem nihil. Quae ut itaque voluptatem sint, inventore neque omnis, alias vel ea est reprehenderit. Officiis tempora blanditiis
+          iure in possimus repellat deserunt maxime quidem quibusdam provident voluptas aspernatur ullam quis amet ex eaque labore, enim vero.
+          Reprehenderit, at alias. Non!
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati dicta neque quam ad et fugiat fuga, qui ex eveniet alias eaque eos non
+          quod rerum maxime corrupti eligendi consequuntur perferendis optio recusandae placeat rem explicabo est ratione? Quas molestiae voluptas
+          iste, quia earum non magnam? Qui, expedita veritatis ipsam ut voluptatem animi odit, placeat praesentium nam soluta iure, aperiam
+          exercitationem nihil. Quae ut itaque voluptatem sint, inventore neque omnis, alias vel ea est reprehenderit. Officiis tempora blanditiis
+          iure in possimus repellat deserunt maxime quidem quibusdam provident voluptas aspernatur ullam quis amet ex eaque labore, enim vero.
+          Reprehenderit, at alias. Non!
+        </p>
+      </main>
+      <aside class="sidebar left">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nulla quo quia culpa necessitatibus, a non, eveniet, nemo officia
+          inventore expedita cum perspiciatis laborum ipsam reiciendis totam! Consequuntur laboriosam eos quia nihil ea nisi repellendus ab accusamus
+          neque cupiditate, quis reprehenderit minus reiciendis, maxime dignissimos saepe assumenda at et. Voluptate.
+        </p>
+      </aside>
+
+      <aside class="sidebar right">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nulla quo quia culpa necessitatibus, a non, eveniet, nemo officia
+          inventore expedita cum perspiciatis laborum ipsam reiciendis totam! Consequuntur laboriosam eos quia nihil ea nisi repellendus ab accusamus
+          neque cupiditate, quis reprehenderit minus reiciendis, maxime dignissimos saepe assumenda at et. Voluptate.
+        </p>
+      </aside>
+    </div>
+  </body>
+</html>
